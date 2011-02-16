@@ -188,8 +188,6 @@ void ZS_Physics::phy_read()
 
 void ZS_Physics::phy_print(FILE *fid)
 {
-        char cbuf;
-
         cout << "\n" << endl;
 	fprintf(fid,"\n");
         cout << "#################################################" << endl;

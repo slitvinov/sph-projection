@@ -117,8 +117,6 @@ void ZS_Particles::particles_projection_position()
 void ZS_Particles::particles_read(FILE *fid)
 {
 	long id(0);
-	int ndim(0);
-
 	if (ctr_only_velocity == 1)
 	{
 		if (phy_num_dim == 2) 

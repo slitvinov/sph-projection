@@ -97,9 +97,6 @@ void ZS_Projection::projection_parameter()
 
 void ZS_Projection::projection_parameter_pb()
 {
-  long id(0);
-  int ndim(0);
-
 	if (ctr_list_type == 2)
 	{
 		if (phy_num_dim == 2)
@@ -160,9 +157,6 @@ void ZS_Projection::projection_parameter_pb()
 
 void ZS_Projection::projection_parameter_mb()
 {
-	double w(0.0);
-	long id(0);
-
 	//w = get_kernel(0);
 
 	//for(id=0;id<particles_num;id++)
