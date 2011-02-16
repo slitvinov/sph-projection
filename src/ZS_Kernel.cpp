@@ -10,14 +10,13 @@ ZS_Kernel::~ZS_Kernel()
 
 double ZS_Kernel::get_kernel(double r)
 {
-	double s(0.0);
 	double factor(0.0);
-	  double w(0.0);
+        double w(0.0);
 
 	// Piecewise Quintic Spline	(Morris, 1996)
 	if (ctr_kernel_type == 1)
 	{
-		s = 3 * r / (phy_cut_off);
+		const double s = 3 * r / (phy_cut_off);
 
 		if (phy_num_dim == 3)    
 			factor = 27 / (120*pi*pow(phy_cut_off,3)) ;
@@ -38,7 +37,7 @@ double ZS_Kernel::get_kernel(double r)
 	// Quartic Spline	(Lucy, 1977)
 	if (ctr_kernel_type == 2)
 	{
-		s = r / phy_cut_off;
+		const double s = r / phy_cut_off;
 
 		if (phy_num_dim == 3)
 			factor = 105 / (16*pi*pow(phy_cut_off,3));
@@ -54,7 +53,7 @@ double ZS_Kernel::get_kernel(double r)
 
 	if (ctr_kernel_type == 3)
 	{	       
-	        s = 2 * r / phy_cut_off;
+	        const double s = 2 * r / phy_cut_off;
 
 		if (s>=0 && s<1)
 			w = 1 - 5 * s * s / 2 + 3 * s * s * s / 2;
@@ -66,7 +65,7 @@ double ZS_Kernel::get_kernel(double r)
 
 	if (ctr_kernel_type == 4)
 	{	       
-	        s = 3 * r / phy_cut_off;
+	        const double s = 3 * r / phy_cut_off;
 
 		if (s>=0 && s<1)
 		        w = (1-s) * (25*pow(s,4) - 38*pow(s,3) - 3*s*s + 12*s + 12) / 12;
