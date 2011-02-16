@@ -1,0 +1,70 @@
+#####
+
+PHYSICS_CONFIG_FILE   =    phy_decay_turb.sz
+
+READ_INIT_PARTICLES   =    1
+
+INPUT_NAME            =    decay32_
+
+INPUT_FORMAT          =    1
+
+OUTPUT_NAME           =    force_decay_long.sz
+
+OUTPUT_FORMAT         =    1
+
+OUTPUT_FREQUENCY      =    100
+
+STATISTIC_NAME        =    statistic_decay_long.sz
+
+STATISTIC_FORMAT      =    1
+
+STATISTIC_FREQUENCY   =    1
+
+WRITE_RESTART         =    0
+
+RESTART_NAME          =    restart.sz
+
+RESTART_FORMAT        =    1
+
+RESTART_FREQUENCY     =    10000
+
+DEBUG_FLAG            =    0
+
+RHS_PRESSURE_FORM     =    1
+
+RHS_VISCOSITY_FORM    =    1
+
+RHS_EXTERNAL_FORM     =    0
+
+DENSITY_TYPE          =    0
+
+STATE_EQUATION_TYPE   =    1
+
+STATE_EQUATION_FORM   =    1
+
+KERNEL_TYPE           =    3
+
+NEIGHBOUR_LIST_TYPE   =    2
+
+INTEGRATE_TYPE        =    2
+
+SYMMETRY              =    0
+
+TEST_CASE             =    3
+
+BEFORE_EXTERNAL       =    0
+
+RANDOM_POSITION	      =    0
+
+RANDOM_VELOCITY	      =    0
+
+TENSOR_CALCULATE      =    0
+
+SF_CALCULATE      =    0
+
+TIME_STEP_AUTO      =    1
+
+PROJECTION_TYPE     =    0
+
+ONLY_VELOCITY       =    0
+

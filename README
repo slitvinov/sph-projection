@@ -1,0 +1,20 @@
+ctrl.sz: 
+INPUT_NAME: <PREFIX> of the input files
+KERNEL_TYPE: kernel type, 1 - Quintic (SPH), 2 - Lucy kernel (SPH), 3 - M4, 4 - M6
+TEST_CASE: boundary type, 1 - periodic, 2 - Lees-Edwards, 3 - periodic
+
+phy_decay_turb.sz:
+overlap (kappa): overlap factor (3.0, 3.5, 4.0), is not used for KERNEL_TYPE 3 and 4
+step_start: the number of the first file to process (name of the file is <PREFIX><NUMBER>)
+step_start: the number of the last file to process
+num_particles: the number of particles
+
+cutoff is calculated based on the number of particles 
+cutoff = kappa * dx = kappa Lx/Nx, Lx length of the domain in x direction, 
+Nx is the number of particles in x direction
+
+input file: <PREFIX><NUMBER>
+output file: <PREFIX><NUMBER>.prj
+
+format of the input file
+<x> <y> <z> .... <vx> <vy> <vz> ... <rho>
