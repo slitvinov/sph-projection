@@ -185,7 +185,7 @@ void ZS_Particles::particles_read(FILE *fid)
 				particles_rho[id] = valuePara[6];
 			}
 
-			delete(valuePara);
+			delete [] valuePara;
 		}
 
 		if (phy_num_dim == 3) 
