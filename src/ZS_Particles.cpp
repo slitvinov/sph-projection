@@ -137,7 +137,7 @@ void ZS_Particles::particles_read(FILE *fid)
 				particles_v[id][1] = valuePara[3];		
 			}
 
-			delete(valuePara);
+			delete [] valuePara;
 		}
 
 		if (phy_num_dim == 3) 
@@ -158,7 +158,7 @@ void ZS_Particles::particles_read(FILE *fid)
 				
 			}
 
-			delete(valuePara);
+			delete [] valuePara;
 		}
 	}
 
@@ -211,7 +211,7 @@ void ZS_Particles::particles_read(FILE *fid)
 				particles_rho[id] = valuePara[9];
 			}
 
-			delete(valuePara);
+			delete [] valuePara;
 		}
 	}
 }
