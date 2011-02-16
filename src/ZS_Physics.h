@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZS_PHYSICS_H
+#define ZS_PHYSICS_H
 #include "ZS_Control.h"
 #include <vector>
 
@@ -71,3 +72,5 @@ class ZS_Physics : public ZS_Control
 		void get_cut_off();
 		void get_domain_length();
 };
+
+#endif //ZS_PHYSICS_H

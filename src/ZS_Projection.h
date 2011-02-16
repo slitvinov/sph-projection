@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZS_PROJECTION_H
+#define ZS_PROJECTION_H
 #include "ZS_Boundary.h"
 
 class ZS_Projection : public ZS_Boundary
@@ -18,3 +19,5 @@ class ZS_Projection : public ZS_Boundary
 		void projection_interaction_remesh();
 		void projection_parameter_reset();
 };
+
+#endif //ZS_PROJECTION_H

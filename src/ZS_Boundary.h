@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZS_BOUNDARY_H
+#define ZS_BOUNDARY_H
 #include "ZS_NeighbourList.h"
 
 class ZS_Boundary : public ZS_NeighbourList
@@ -34,3 +35,5 @@ class ZS_Boundary : public ZS_NeighbourList
 		void boundary_lees_cell();
 		vector<double> boundary_lees_velocity(long j);
 };
+
+#endif //ZS_BOUNDARY_H

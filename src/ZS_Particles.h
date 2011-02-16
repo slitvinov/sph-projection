@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZS_PARTICLES_H
+#define ZS_PARTICLES_H
 #include "ZS_Physics.h"
 
 class ZS_Particles : public ZS_Physics
@@ -33,3 +34,5 @@ class ZS_Particles : public ZS_Physics
 		void particles_write(FILE *fid);
 
 };
+
+#endif //ZS_PARTICLES_H

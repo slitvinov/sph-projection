@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ZS_NEIGHBOURLIST_H
+#define ZS_NEIGHBOURLIST_H
 #include "ZS_Kernel.h"
 
 class ZS_NeighbourList : public ZS_Kernel
@@ -29,3 +30,5 @@ class ZS_NeighbourList : public ZS_Kernel
 		void cell_list_init();
 		void cell_list_generate();
 };
+
+#endif //ZS_NEIGHBOURLIST_H

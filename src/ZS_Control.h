@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef ZS_CONTROL_H
+#define ZS_CONTROL_H
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
@@ -65,3 +65,5 @@ class ZS_Control
 
 		void ctrl_read();
 };
+
+#endif //ZS_CONTROL_H
