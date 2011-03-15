@@ -1,3 +1,4 @@
+///\file ZS_Boundary.h
 #include "ZS_Boundary.h"
 
 ZS_Boundary::ZS_Boundary()
@@ -10,10 +11,9 @@ ZS_Boundary::~ZS_Boundary()
 
 void ZS_Boundary::boundary_init()
 {
-	boundary_upper_neighbour.resize(cell_num[0]+3,0);
-	boundary_lower_neighbour.resize(cell_num[0]+3,0);
-
-	boundary_rshift.resize(phy_num_dim,0.0);
+  boundary_upper_neighbour.resize(cell_num[0]+3, 0);
+  boundary_lower_neighbour.resize(cell_num[0]+3, 0);
+    boundary_rshift.resize(phy_num_dim, 0.0);
 }
 
 void ZS_Boundary::boundary_generate()
